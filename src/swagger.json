@@ -114,7 +114,8 @@
             "in": "header",
             "required": true,
             "schema": {
-              "type": "string($uuid)"
+              "type": "string",
+              "format": "uuid"
             }
           }
         ],
@@ -203,7 +204,11 @@
             "name": "user_id",
             "in": "path",
             "description": "ID do usuário",
-            "required": true
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
           }
         ],
         "responses": {
@@ -279,7 +284,8 @@
             "in": "path",
             "required": true,
             "schema": {
-              "type": "string($uuid)"
+              "type": "string",
+              "format": "uuid"
             }
           }
         ],
